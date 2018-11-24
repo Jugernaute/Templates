@@ -1,0 +1,26 @@
+String path = System.getProperty("user.home")
+//        C:\Users\User\IdeaProjects\DevelopAuction1\src\main\resources\logError\errorLog.txt
+                + File.separator
+                + "IdeaProjects"
+                + File.separator
+                + "DevelopAuction1"
+                + File.separator
+                + "src"
+                + File.separator
+                + "main"
+                + File.separator
+                + "resources"
+                + File.separator
+                + "logError"
+                + File.separator
+                + "errorLog.txt";
+
+        File file = new File(path);
+        try {
+            FileWriter fileWriter = new FileWriter(file);
+            fileWriter.write("");
+            fileWriter.flush();
+            fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
