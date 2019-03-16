@@ -1,0 +1,4 @@
+SELECT UPDATE_TIME
+FROM   information_schema.tables
+WHERE  TABLE_SCHEMA = 'parsing_exmpl_1'
+       AND TABLE_NAME = 'date_of_update';
