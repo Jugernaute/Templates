@@ -1,0 +1,6 @@
+ALTER DATABASE parsing_exmpl_1 CHARACTER SET = utf8;
+SHOW VARIABLES WHERE Variable_name LIKE 'character\_set\_%' OR Variable_name LIKE 'collation%';
+SET NAMES utf8 COLLATE utf8_unicode_ci;
+SET collation_connection = utf8_unicode_ci;
+SET character_set_server = utf8;
+ALTER TABLE region CONVERT TO CHARACTER SET 'utf8';
